@@ -1,0 +1,17 @@
+<p>
+  Welcome {{profile?.displayName}}!
+</p>
+
+<button mat-raised-button  (click)="getTestData()">Get Test Data</button>
+
+<p>Test Data: {{ testData }}</p>
+
+<button mat-raised-button  (click)="getTestWeatherData()">Get Weather Test Data</button>
+
+<p>Weather Forecast Data: {{ weatherData }}</p>
+
+<ul>
+  <li *ngFor="let item of weatherData">{{ item.date }} - {{ item.summary}} - {{ item.temperatureF }}</li>
+</ul>
+
+
