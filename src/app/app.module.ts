@@ -35,7 +35,7 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
       auth: {
         clientId: '888234e7-4103-41ff-8c30-46e5884b6aa8',
         authority: 'https://login.microsoftonline.com/2fa92604-e557-4d4c-a240-f0df7d71bda8',
-        redirectUri: 'http://localhost:4200/',
+        redirectUri: 'https://victorious-forest-0a776a81e.azurestaticapps.net',
       },
       cache: {
         //cacheLocation: 'localStorage',
