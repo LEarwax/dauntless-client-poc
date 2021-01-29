@@ -3,7 +3,7 @@ import { MsalService } from '@azure/msal-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { InteractionRequiredAuthError, AuthError } from 'msal';
 
-const weatherAPIEndpoint = "https://dauntlessweatherapi.azurewebsites.net";
+const weatherAPIEndpoint = "https://dauntlessapiservice.azurewebsites.net";
 
 interface WeatherForecast {
   date: string;
