@@ -34,7 +34,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() { }
 
   getTestData() {
-    this.http.get(`${weatherAPIEndpoint}/test`, { responseType: 'text' }).subscribe(
+    this.http.get(`${weatherAPIEndpoint}`, { responseType: 'text' }).subscribe(
       res => {
         console.log("Response: ", res)
         this.testData = res;
@@ -43,7 +43,7 @@ export class ProfileComponent implements OnInit {
   }
 
   getTestWeatherData() {
-    this.http.get(`${weatherAPIEndpoint}`, this.httpOptions).subscribe(
+    this.http.get(`${weatherAPIEndpoint}/forecast`, this.httpOptions).subscribe(
       (res: any[]) => {
         
         for (let i = 0; i < res.length; i++) {
