@@ -45,11 +45,11 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     {
       popUp: !isIE,
       consentScopes: [
-        'api://12da9937-a5db-4cd9-ba7b-b5d563153085/Weather.Conditions'
+        'api://5519b480-08da-4d6b-b8f0-9506c9e90684/Weather.Conditions'
       ],
       unprotectedResources: [],
       protectedResourceMap: [
-        ['https://dauntless-api-poc.azure-api.net', ['api://12da9937-a5db-4cd9-ba7b-b5d563153085/Weather.Conditions']]
+        ['https://dauntlessapiservice.azurewebsites.net', ['api://5519b480-08da-4d6b-b8f0-9506c9e90684/Weather.Conditions']]
       ],
       extraQueryParameters: {}
     })
