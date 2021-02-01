@@ -49,7 +49,7 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
       ],
       unprotectedResources: [],
       protectedResourceMap: [
-        ['https://dauntlessapiservice.azurewebsites.net', ['api://5519b480-08da-4d6b-b8f0-9506c9e90684/Weather.Conditions']]
+        ['https://dauntlessapiappservice.azurewebsites.net/', ['api://5519b480-08da-4d6b-b8f0-9506c9e90684/Weather.Conditions']]
       ],
       extraQueryParameters: {}
     })
