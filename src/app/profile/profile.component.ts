@@ -3,7 +3,7 @@ import { MsalService } from '@azure/msal-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { InteractionRequiredAuthError, AuthError } from 'msal';
 
-const weatherAPIEndpoint = "https://dauntlessapiappservice.azurewebsites.net/";
+const coreAPIEndpoint = "https://ctlvr-nvmbr-api-appservice.azurewebsites.net";
 
 interface WeatherForecast {
   date: string;
@@ -34,7 +34,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() { }
 
   getTestData() {
-    this.http.get(`${weatherAPIEndpoint}/api/authless`, { responseType: 'text' }).subscribe(
+    this.http.get(`${coreAPIEndpoint}/api/noauthtest/test`, { responseType: 'text' }).subscribe(
       res => {
         console.log("Response: ", res)
         this.testData = res;
@@ -43,7 +43,7 @@ export class ProfileComponent implements OnInit {
   }
 
   getTestWeatherData() {
-    this.http.get(`${weatherAPIEndpoint}/api/weatherforecast`, this.httpOptions).subscribe(
+    this.http.get(`${coreAPIEndpoint}/api/weatherforecast/forecast`, this.httpOptions).subscribe(
       (res: any[]) => {
         
         for (let i = 0; i < res.length; i++) {

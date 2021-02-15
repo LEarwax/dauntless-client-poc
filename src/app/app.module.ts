@@ -33,9 +33,9 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     AppRoutingModule,
     MsalModule.forRoot({
       auth: {
-        clientId: '888234e7-4103-41ff-8c30-46e5884b6aa8',
-        authority: 'https://login.microsoftonline.com/2fa92604-e557-4d4c-a240-f0df7d71bda8',
-        redirectUri: 'https://victorious-forest-0a776a81e.azurestaticapps.net',
+        clientId: 'c6e99c7d-8da1-4c5f-9ae6-37c49d3d1f2d',
+        authority: 'https://login.microsoftonline.com/f7dc11ce-a7ef-4a98-81b2-d57f0bd15222',
+        redirectUri: 'https://white-moss-0438ce71e.azurestaticapps.net'
       },
       cache: {
         //cacheLocation: 'localStorage',
@@ -45,11 +45,11 @@ const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigato
     {
       popUp: !isIE,
       consentScopes: [
-        'api://5519b480-08da-4d6b-b8f0-9506c9e90684/Weather.Conditions'
+        'api://39998322-19ea-42a5-aee0-d0a64f948b29/UserAccess'
       ],
       unprotectedResources: [],
       protectedResourceMap: [
-        ['https://dauntlessapiappservice.azurewebsites.net/', ['api://5519b480-08da-4d6b-b8f0-9506c9e90684/Weather.Conditions']]
+        ['https://ctlvr-nvmbr-api-appservice.azurewebsites.net', ['api://39998322-19ea-42a5-aee0-d0a64f948b29/UserAccess']]
       ],
       extraQueryParameters: {}
     })
